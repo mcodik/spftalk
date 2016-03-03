@@ -1,5 +1,9 @@
 function [ result ] = factorial( n )
 %factorial Computes the factorial of n
-  result = 2;
+    if n == 0
+        result = 1
+    else 
+        result = n * factorial(n -1)
+    end
 end
 
